@@ -1,59 +1,98 @@
-# AngularSignalsLab
+# 🧠 Angular Signals Lab
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+A playground and learning repository for mastering **Angular Signals**
+---\
+from simple to complex reactive patterns.
 
-## Development server
+This project demonstrates:
 
-To start a local development server, run:
+-   Using `signal()`, `computed()`, and `effect()` for state management\
+-   Standalone components and modern Angular routing\
+-   Nested and reusable UI patterns (e.g., nested comments)\
+-   Architecting real apps with Angular's reactive primitives
 
-```bash
-ng serve
+------------------------------------------------------------------------
+
+## 🚀 Project Structure
+
+    src/
+    ├── app/
+    │   ├── home/                 # Home page
+    │   ├── todo/                 # Todo app with signal-based state
+    │   └── comments/             # Nested comments component example
+    ├── app.routes.ts             # Angular routing config
+    └── main.ts                   # Application bootstrap
+
+------------------------------------------------------------------------
+
+## 🎯 Learning Goals
+
+-   Define and read signals (`signal()`)
+-   Create derived state with `computed()`
+-   Handle side effects using `effect()`
+-   Implement lazy routing with `loadComponent` & `loadChildren`
+-   Use standalone component architecture effectively
+
+------------------------------------------------------------------------
+
+## ⚙️ Setup & Running
+
+### 1️⃣ Clone the repository
+
+``` bash
+git clone https://github.com/EswarBalasubramanian/angular-signals-lab.git
+cd angular-signals-lab
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2️⃣ Install dependencies
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+``` bash
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 3️⃣ Start development server
 
-```bash
-ng generate --help
+``` bash
+npm start
 ```
 
-## Building
+App runs at:
 
-To build the project run:
+    http://localhost:4200/
 
-```bash
-ng build
+------------------------------------------------------------------------
+
+## 🏗 Build & Test
+
+### Build production bundle
+
+``` bash
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Run unit tests
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
+``` bash
+npm test
 ```
 
-## Running end-to-end tests
+------------------------------------------------------------------------
 
-For end-to-end (e2e) testing, run:
+## 📈 How to Extend This Lab
 
-```bash
-ng e2e
-```
+-   Add new signal-based features inside `src/app/`
+-   Use `signal()`, `computed()`, and `effect()` in components
+-   Register lazy routes in `app.routes.ts`
+-   Explore nested state patterns and shared signal stores
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+------------------------------------------------------------------------
 
-## Additional Resources
+## 👨‍💻 Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Eswar Balasubramanian**
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+Open for learning and experimentation.

@@ -1,0 +1,18 @@
+TODOS
+<input type="todo" [formField]="todoForm.todo" (keyup)="handleKeyboardEvent($event)"/>
+ {{error}}
+<ul class="todo-list">
+    <!-- <app-todo-item todos> -->
+        @for (todo of todos; track todo; let idx = $index) {
+            <li>
+                <div class="view">
+                    <input type="checkbox" class="toggle">
+                    <label>{{ todo }}</label>
+                    <button class="destroy" (click)="removeTodo(idx)">X</button>
+                </div>
+            </li>
+        } @empty {
+            <li> {{"There are no items."}}</li>
+        }
+    <!-- </app-todo-item> -->
+</ul>
